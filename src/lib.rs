@@ -30,7 +30,7 @@ unsafe fn gmod13_open(lua: gmod::lua::State) -> i32 {
 
 	worker::init();
 
-    print(&lua, &"Voice Module Loading completed".to_string());
+    print(&lua, &"Async compress Module Loading completed".to_string());
 	
 	LUA.with(|cell| {
 		cell.set(Some(lua));

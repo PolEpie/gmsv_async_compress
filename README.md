@@ -18,5 +18,5 @@ It use [gmod-lzma-rs](https://github.com/WilliamVenner/gmod-lzma-rs) and make it
 For Linux 32 bit, you need to do this in 2 stages:
 1. Create a Docker image - `docker build -t rust_32bit .`
 2. Execute the compilation - `docker run -it -v $(pwd):/compile_area -w "/compile_area" rust_32bit`
-3. You can find the result in `target/i686-unknown-linux-gnu/release/libgmsv_voice_optimization.so` which you should copy to `lua/bin/gmsv_voice_optimization_linux.dll`
-4. Invoke the module via `require("voice_optimization")`
+3. You can find the result in `target/i686-unknown-linux-gnu/release/libgmsv_async_compress.so` which you should copy to `lua/bin/gmsv_async_compress_linux.dll`
+4. Invoke the module via `require("async_compress")`
