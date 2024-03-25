@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "Build Linux x32 (through Docker)",
+            "type": "shell",
+            "command": [
+                "docker run -it -v ${workspaceFolder}:/compile_area -w '/compile_area' rust_32bit; mv target/i686-unknown-linux-gnu/release/libgmsv_async_compress.so gmsv_async_compress_linux.dll -Force "
+            ],
+            "isBackground": true,
+            "problemMatcher": [
+                "$rustc"
+            ]
+        }
+	]
+}

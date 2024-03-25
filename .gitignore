@@ -1,0 +1,4 @@
+/target
+/Cargo.lock
+
+gmsv_async_compress_linux.dll
