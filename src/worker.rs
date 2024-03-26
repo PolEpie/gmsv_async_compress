@@ -34,7 +34,7 @@ pub fn send(lua: gmod::lua::State, arg: Argument) {
         unsafe {
             lua.get_global(lua_string!("timer"));
             lua.get_field(-1, lua_string!("Create"));
-            lua.push_string("playground");
+            lua.push_string("compress_worker");
             lua.push_integer(0);
             lua.push_integer(0);
             lua.push_function(think);
